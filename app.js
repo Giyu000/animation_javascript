@@ -1,10 +1,13 @@
+// .containerクラスを持つ要素を取得
 const container = document.querySelector(".container");
+// 50個のブロックを作成
 for (var i = 0; i <= 50; i++) {
     const blocks = document.createElement("div");
     blocks.classList.add("block")
     container.appendChild(blocks);
 }
 
+// Anime.js を使用しアニメーションを定義
 function animateBlocks() {
     anime({
         targets: ".block",
@@ -28,4 +31,5 @@ function animateBlocks() {
         direction: "alternate"
     });
 }
+// ページをロードした後にアニメーションを開始
 window.addEventListener("load", animateBlocks);

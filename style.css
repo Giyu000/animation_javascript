@@ -1,5 +1,7 @@
+/* Google fonts インポート */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@1,300&display=swap');
 
+/* グローバルリセットとフォント指定  */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* body タグの設定 */
 body {
     display: flex;
     align-items: center;
@@ -17,6 +20,7 @@ body {
     overflow: hidden;
 }
 
+/* アニメーション用ブロック */
 .container {
     position: absolute;
     display: flex;
@@ -26,6 +30,7 @@ body {
     height: 100%;
 }
 
+/* タイトルテキスト */
 h2 {
     color: rgb(255, 255, 255);
     font-size: 6rem;
@@ -35,6 +40,7 @@ h2 {
     z-index: 2;
 }
 
+/* 円形ブロック */
 .block {
     position: absolute;
     width: 100px;
